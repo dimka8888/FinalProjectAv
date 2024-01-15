@@ -19,7 +19,6 @@ public class AvTest extends BaseTest {
         avPage.getErrorMessange();
         Assertions.assertEquals("Неверный логин или пароль. Если забыли пароль, восстановите его", avPage.getErrorMessange());
     }
-
     @Test
     public void testLoginByPhoneNumber() throws InterruptedException {
         AvPage avPage = new AvPage();
@@ -31,7 +30,6 @@ public class AvTest extends BaseTest {
         avPage.getErrorMessangeNumber();
         Assertions.assertEquals("Неверный телефон или пароль. Если забыли пароль, восстановите его", avPage.getErrorMessangeNumber());
     }
-
     @Test
     public void testSearchStringPage() throws InterruptedException {
         AvPage avPage = new AvPage();
@@ -45,7 +43,6 @@ public class AvTest extends BaseTest {
         avPage.getResultTitle();
         Assertions.assertEquals("Продажа автомобилей Mazda 6", avPage.getResultTitle());
     }
-
     @Test
     public void testHeaderCheck() throws InterruptedException {
         AvPage avPage = new AvPage();
@@ -55,6 +52,3 @@ public class AvTest extends BaseTest {
         Assertions.assertEquals("Продажа спецтехники в Беларуси", avPage.getMessangeHeadingSpecialEquipment());
     }
 }
-
-
-

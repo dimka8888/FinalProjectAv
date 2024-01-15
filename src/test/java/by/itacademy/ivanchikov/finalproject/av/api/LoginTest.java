@@ -14,7 +14,7 @@ public class LoginTest {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
         String body = "{\n" +
-                "    \"login\": \"test@test.com\",\n" +
+                "    \"login\": \"dmitry{{$randomInt}}@mail.ru\",\n" +
                 "    \"password\": \"123456778\"\n" +
                 "}";
         given().body(body).headers(headers).when()
@@ -23,7 +23,6 @@ public class LoginTest {
                 statusCode(400).
                 body("messageText", equalTo("Неверный логин или пароль. Если забыли пароль, восстановите его"));
     }
-
     @Test
     public void checkLoginWithEmptyPasswordAndlogin() {
         Map<String, String> headers = new HashMap<>();
@@ -38,13 +37,12 @@ public class LoginTest {
                 statusCode(400).
                 body("messageText", equalTo("Запрос не соответствует правилам валидации"));
     }
-
     @Test
     public void checkLoginWithEmptyPassword() {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
         String body = "{\n" +
-                "    \"login\": \"test1@test.com\",\n" +
+                "    \"login\": \"viktor{{$randomInt}}@mail.ru\",\n" +
                 "    \"password\": \"\"\n" +
                 "}";
         given().body(body).headers(headers).when()
@@ -53,19 +51,17 @@ public class LoginTest {
                 statusCode(400).
                 body("messageText", equalTo("Запрос не соответствует правилам валидации"));
     }
-
     @Test
     public void checkLoginWithRemovedLoginField() {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
-        String body = "{\"\"password\":\"1111111111\"}";
+        String body = "{\"\"password\":\"alina{{$randomInt}}@mail.ru\"}";
         given().body(body).headers(headers).when()
                 .body("https://api.av.by/auth/login/sign-in").
                 then().
                 statusCode(400).
                 body("messageText", equalTo("Неверный запрос"));
     }
-
     @Test
     public void checkLoginWithRemovedLoginAndPasswordField() {
         Map<String, String> headers = new HashMap<>();
