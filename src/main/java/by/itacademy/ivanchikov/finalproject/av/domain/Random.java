@@ -4,8 +4,8 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 public class Random {
     public static String getComplexRandomMail() {
-        String lowerCharacters = "abcde";
-        String upperCharacters = "ABCDE";
+        String lowerCharacters = "abcdefghijklmnopqrstuvwxyz";
+        String upperCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String numberCharacters = "0123456789";
         return RandomStringUtils.random(1, lowerCharacters)
                 + RandomStringUtils.random(1, upperCharacters)
@@ -25,7 +25,7 @@ public class Random {
     }
 
     public static String getComplexRandomNumber() {
-        String numberCharacters = "0123456789";
+        String numberCharacters = "123456789";
         return "33" + RandomStringUtils.random(7, numberCharacters);
     }
 }

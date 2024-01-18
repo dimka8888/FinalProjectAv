@@ -9,7 +9,7 @@ public class User {
     }
 
     public static String getRandomCorrectEmail() {
-        return faker.internet().safeEmailAddress(faker.name().firstName());
+        return faker.internet().safeEmailAddress(faker.name().firstName()+"@test.com");
     }
 
     public static String getRandomPassword() {
@@ -20,7 +20,7 @@ public class User {
         StringBuilder phoneNumber = new StringBuilder();
         phoneNumber.append("29");
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 1; i < 7; i++) {
             phoneNumber.append(faker.number().randomDigit());
         }
         return phoneNumber.toString();
