@@ -34,12 +34,11 @@ public class AvTest extends BaseTest {
     public void testSearchStringPage() throws InterruptedException {
         AvPage avPage = new AvPage();
         avPage.openHomePage();
-        avPage.clickSearchButtonBrand();
-        avPage.clickSendKeysCarMakeSearch();
-        avPage.clickButtonCarMakeSearch();
-        avPage.clickModelSelectionButton();
-        avPage.clickModelSelectionConfirmationButton();
-        avPage.clickShowResultButton();
+        avPage.clickSearchButtonBrand();//выбор марки
+        avPage.clickSendKeysCarMakeSearch();// написание текста мазда и нажатие интер
+        avPage.clickShowResultButton();//        нажмите кнопку «Показать результат»
+        avPage.clickModelSelectionButton();//нажмите кнопку выбора модели
+        avPage.clickModelSelectionConfirmationButton();//      нажмите кнопку подтверждения выбора модели
         avPage.getResultTitle();
         Assertions.assertEquals("Продажа автомобилей Mazda 6", avPage.getResultTitle());
     }

@@ -13,10 +13,10 @@ public class AvPageXpath {
     public static final String ERROR_MESSANGE_NUMBER = "//div[@class='error-message']";
     public static final String SEARCH_BUTTON_BRAND = "//span[@class='dropdown-floatlabel__value']";
     public static final String CAR_MAKE_SEARCH = "//input[@class='dropdown__input']";
-    public static final String BUTTON_CAR_MAKE_SEARCH = "//button[@class='dropdown__listbutton dropdown__listbutton--focus dropdown__listbutton--selected']";
-    public static final String MODEL_SELECTION_BUTTON = "//div[@id='p-6-0-3-model']/div/div/button/span/span";
-    public static final String MODEL_SELECTION_CONFIRMATION_BUTTON = "//ul[@class='dropdown-list dropdown-list--opened']/li[9]";
-    public static final String SHOW_RESULT_BUTTON = "//a[@class='button button--secondary button--block']/span";
+
+    public static final String MODEL_SELECTION_BUTTON = "//div[@class='catalog__list']//*[text()='6']";
+    public static final String MODEL_SELECTION_CONFIRMATION_BUTTON = "//button[@class='button button--secondary button--block']";
+    public static final String SHOW_RESULT_BUTTON = "//div[@class='filter__show-result']";
     public static final String HEADIN_SPECIAL_EQUIPMENT = "//a[@class='footer__link'][text()='Спецтехника']";
     public static final String MESSANGE_HEADING_SPECIAL_EQUIPMENT = " //h1[@ class='heading__text']";
     public static final String RESULT_TITLE = "//*[text()='Продажа автомобилей Mazda 6']";

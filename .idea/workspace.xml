@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f62e15-8ca8-4745-b011-8560b3f57c18" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/itacademy/ivanchikov/finalproject/av/testCalcApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/driver/MyDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/driver/MyDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPageXpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPageXpath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/itacademy/ivanchikov/finalproject/av/ui/AvTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itacademy/ivanchikov/finalproject/av/ui/AvTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +41,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/src/FinalProjectAv/lib/apache-log4j-2.22.1-bin/log4j-web-2.22.1.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/src/FinalProjectAv/lib/apache-log4j-2.22.1-bin/log4j-web-2.22.1.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ContentType" />
@@ -63,50 +64,66 @@
       <recent name="by.itacademy.ivanchikov.finalproject.av" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.checkLoginWithRemovedLoginAndPasswordField">
-    <configuration name="LoginTest.checkLoginWithEmptyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AvTest.testSearchStringPage">
+    <configuration name="AvTest.testHeaderCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectAv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.api.*" />
+          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.api" />
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.api.LoginTest" />
-      <option name="METHOD_NAME" value="checkLoginWithEmptyPassword" />
+      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui" />
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui.AvTest" />
+      <option name="METHOD_NAME" value="testHeaderCheck" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkLoginWithEmptyPasswordAndlogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AvTest.testLoginByPhoneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectAv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.api.*" />
+          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.api" />
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.api.LoginTest" />
-      <option name="METHOD_NAME" value="checkLoginWithEmptyPasswordAndlogin" />
+      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui" />
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui.AvTest" />
+      <option name="METHOD_NAME" value="testLoginByPhoneNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkLoginWithIncorrectPasswordAndLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AvTest.testLoginCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectAv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.api.*" />
+          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.api" />
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.api.LoginTest" />
-      <option name="METHOD_NAME" value="checkLoginWithIncorrectPasswordAndLogin" />
+      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui" />
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui.AvTest" />
+      <option name="METHOD_NAME" value="testLoginCheck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AvTest.testSearchStringPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalProjectAv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui" />
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.ui.AvTest" />
+      <option name="METHOD_NAME" value="testSearchStringPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,29 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkLoginWithRemovedLoginField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalProjectAv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itacademy.ivanchikov.finalproject.av.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.itacademy.ivanchikov.finalproject.av.api" />
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.ivanchikov.finalproject.av.api.LoginTest" />
-      <option name="METHOD_NAME" value="checkLoginWithRemovedLoginField" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AvTest.testSearchStringPage" />
+        <item itemvalue="JUnit.AvTest.testHeaderCheck" />
+        <item itemvalue="JUnit.AvTest.testLoginByPhoneNumber" />
+        <item itemvalue="JUnit.AvTest.testLoginCheck" />
         <item itemvalue="JUnit.LoginTest.checkLoginWithRemovedLoginAndPasswordField" />
-        <item itemvalue="JUnit.LoginTest.checkLoginWithEmptyPasswordAndlogin" />
-        <item itemvalue="JUnit.LoginTest.checkLoginWithIncorrectPasswordAndLogin" />
-        <item itemvalue="JUnit.LoginTest.checkLoginWithRemovedLoginField" />
-        <item itemvalue="JUnit.LoginTest.checkLoginWithEmptyPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -187,18 +188,30 @@
       <option name="project" value="LOCAL" />
       <updated>1705616352594</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add log4j">
+      <option name="closed" value="true" />
+      <created>1706023805802</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706023805802</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add final" />
     <MESSAGE value="add final andom login" />
     <MESSAGE value="add final random login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add final random login" />
+    <MESSAGE value="add log4j" />
+    <option name="LAST_COMMIT_MESSAGE" value="add log4j" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FinalProjectAv$testAv_testFooterSite.ic" NAME="testAv.testFooterSite Coverage Results" MODIFIED="1704387423559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>by.itacademy.ivanchikov.finalproject.av.api.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FinalProjectAv$AvTest_testSearchStringPage.ic" NAME="AvTest.testSearchStringPage Coverage Results" MODIFIED="1706129538951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>by.itacademy.ivanchikov.finalproject.av.ui.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/FinalProjectAv$testAv_start.ic" NAME="testAv.start Coverage Results" MODIFIED="1704400362368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>by.itacademy.ivanchikov.finalproject.av.api.*</FILTER>
