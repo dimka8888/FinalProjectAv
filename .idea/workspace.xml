@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a8f62e15-8ca8-4745-b011-8560b3f57c18" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/driver/MyDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/driver/MyDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPageXpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itacademy/ivanchikov/finalproject/av/page/AvPageXpath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/itacademy/ivanchikov/finalproject/av/ui/AvTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itacademy/ivanchikov/finalproject/av/ui/AvTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <recent name="by.itacademy.ivanchikov.finalproject.av" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AvTest.testSearchStringPage">
+  <component name="RunManager" selected="JUnit.AvTest.testLoginByPhoneNumber">
     <configuration name="AvTest.testHeaderCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectAv" />
       <extension name="coverage">
@@ -147,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AvTest.testLoginByPhoneNumber" />
         <item itemvalue="JUnit.AvTest.testSearchStringPage" />
         <item itemvalue="JUnit.AvTest.testHeaderCheck" />
-        <item itemvalue="JUnit.AvTest.testLoginByPhoneNumber" />
         <item itemvalue="JUnit.AvTest.testLoginCheck" />
         <item itemvalue="JUnit.LoginTest.checkLoginWithRemovedLoginAndPasswordField" />
       </list>
@@ -196,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706023805802</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add delay changes">
+      <option name="closed" value="true" />
+      <created>1706132872272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706132872272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,7 +209,8 @@
     <MESSAGE value="add final andom login" />
     <MESSAGE value="add final random login" />
     <MESSAGE value="add log4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="add log4j" />
+    <MESSAGE value="add delay changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delay changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FinalProjectAv$testAv_testFooterSite.ic" NAME="testAv.testFooterSite Coverage Results" MODIFIED="1704387423559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

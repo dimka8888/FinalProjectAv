@@ -23,12 +23,12 @@ public class AvPage {
 
     public void clickLoginButtonMain() {
         driver.findElement(By.xpath(AvPageXpath.LOGIN_BUTTON_MAIN)).click();
-
+        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
     }
 
     public void clickLoginMailTab()  {
+               driver.findElement(By.xpath(AvPageXpath.LOGIN_MAIL_TAB)).click();
         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-        driver.findElement(By.xpath(AvPageXpath.LOGIN_MAIL_TAB)).click();
     }
 
     public void sendKeysLoginInputField()  {
@@ -51,7 +51,7 @@ public class AvPage {
 
     public void sendKeysPhoneLoginNumber()  {
                 driver.findElement(By.xpath(AvPageXpath.PHONE_LOGIN_NUMBER)).sendKeys(Random.getComplexRandomNumber());
-        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+
     }
 
     public void sendKeysPhonePasswordNumber()  {
