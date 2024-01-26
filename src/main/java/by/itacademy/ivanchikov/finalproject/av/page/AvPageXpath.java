@@ -13,7 +13,6 @@ public class AvPageXpath {
     public static final String ERROR_MESSANGE_NUMBER = "//div[@class='error-message']";
     public static final String SEARCH_BUTTON_BRAND = "//span[@class='dropdown-floatlabel__value']";
     public static final String CAR_MAKE_SEARCH = "//input[@class='dropdown__input']";
-
     public static final String MODEL_SELECTION_BUTTON = "//div[@class='catalog__list']//*[text()='6']";
     public static final String MODEL_SELECTION_CONFIRMATION_BUTTON = "//button[@class='button button--secondary button--block']";
     public static final String SHOW_RESULT_BUTTON = "//div[@class='filter__show-result']";

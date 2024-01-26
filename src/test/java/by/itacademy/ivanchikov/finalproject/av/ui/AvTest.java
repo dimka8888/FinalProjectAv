@@ -19,6 +19,7 @@ public class AvTest extends BaseTest {
         avPage.getErrorMessange();
         Assertions.assertEquals("Неверный логин или пароль. Если забыли пароль, восстановите его", avPage.getErrorMessange());
     }
+
     @Test
     public void testLoginByPhoneNumber() throws InterruptedException {
         AvPage avPage = new AvPage();
@@ -30,18 +31,20 @@ public class AvTest extends BaseTest {
         avPage.getErrorMessangeNumber();
         Assertions.assertEquals("Неверный телефон или пароль. Если забыли пароль, восстановите его", avPage.getErrorMessangeNumber());
     }
+
     @Test
     public void testSearchStringPage() throws InterruptedException {
         AvPage avPage = new AvPage();
         avPage.openHomePage();
-        avPage.clickSearchButtonBrand();//выбор марки
-        avPage.clickSendKeysCarMakeSearch();// написание текста мазда и нажатие интер
-        avPage.clickShowResultButton();//        нажмите кнопку «Показать результат»
-        avPage.clickModelSelectionButton();//нажмите кнопку выбора модели
-        avPage.clickModelSelectionConfirmationButton();//      нажмите кнопку подтверждения выбора модели
+        avPage.clickSearchButtonBrand();
+        avPage.clickSendKeysCarMakeSearch();
+        avPage.clickShowResultButton();
+        avPage.clickModelSelectionButton();
+        avPage.clickModelSelectionConfirmationButton();
         avPage.getResultTitle();
         Assertions.assertEquals("Продажа автомобилей Mazda 6", avPage.getResultTitle());
     }
+
     @Test
     public void testHeaderCheck() throws InterruptedException {
         AvPage avPage = new AvPage();
