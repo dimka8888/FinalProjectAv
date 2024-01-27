@@ -2,6 +2,7 @@ package by.itacademy.ivanchikov.finalproject.av.page;
 
 
 import by.itacademy.ivanchikov.finalproject.av.domain.Random;
+import by.itacademy.ivanchikov.finalproject.av.domain.User;
 import by.itacademy.ivanchikov.finalproject.av.driver.MyDriver;
 import by.itacademy.ivanchikov.finalproject.av.utils.Waiter;
 import net.bytebuddy.asm.Advice;
@@ -37,7 +38,7 @@ public class AvPage {
     }
 
     public void sendKeysLoginInputField() {
-        driver.findElement(By.xpath(AvPageXpath.LOGIN_INPUT_FIELD)).sendKeys(Random.getComplexRandomMail());
+        driver.findElement(By.xpath(AvPageXpath.LOGIN_INPUT_FIELD)).sendKeys(User.getRandomNoCorrectEmail());
     }
 
     public void sendKeysPasswordInputField() {
