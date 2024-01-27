@@ -1,7 +1,6 @@
 package by.itacademy.ivanchikov.finalproject.av.ui;
 
 
-import by.itacademy.ivanchikov.finalproject.av.driver.MyDriver;
 import by.itacademy.ivanchikov.finalproject.av.page.AvPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

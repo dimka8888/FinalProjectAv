@@ -3,9 +3,8 @@ package by.itacademy.ivanchikov.finalproject.av.page;
 
 import by.itacademy.ivanchikov.finalproject.av.domain.Random;
 import by.itacademy.ivanchikov.finalproject.av.domain.User;
-import by.itacademy.ivanchikov.finalproject.av.driver.MyDriver;
+import by.itacademy.ivanchikov.finalproject.av.driver.DriverSingleton;
 import by.itacademy.ivanchikov.finalproject.av.utils.Waiter;
-import net.bytebuddy.asm.Advice;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -19,10 +18,10 @@ import java.util.concurrent.TimeUnit;
 public class AvPage {
     private static final Logger logger = LogManager.getLogger();
     WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(MyDriver.getDriver(), Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), Duration.ofSeconds(10));
 
     public AvPage() {
-        this.driver = MyDriver.getDriver();
+        this.driver = DriverSingleton.getDriver();
     }
 
     public void openHomePage() {

@@ -4,9 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
-public class MyDriver {
+public class DriverSingleton {
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
@@ -25,11 +24,4 @@ public class MyDriver {
         } else
             driver.quit();
     }
-    public void waitFor(int milliseconds) {
-        try {
-            Thread.sleep(milliseconds*5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-}
+  }
