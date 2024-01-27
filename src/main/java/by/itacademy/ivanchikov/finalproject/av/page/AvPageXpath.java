@@ -1,6 +1,10 @@
 package by.itacademy.ivanchikov.finalproject.av.page;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class AvPageXpath {
+    private static final Logger logger = LogManager.getLogger();
     public static final String LOGIN_INPUT_FIELD = "//input[@id='authLogin']";
     public static final String PASSWORD_INPUT_FIELD = "//input[@id='loginPassword']";
     public static final String LOGIN_BUTTON_MAIN = "//span[text()='Войти']";

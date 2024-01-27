@@ -3,7 +3,10 @@ package by.itacademy.ivanchikov.finalproject.av.page;
 
 import by.itacademy.ivanchikov.finalproject.av.domain.Random;
 import by.itacademy.ivanchikov.finalproject.av.driver.MyDriver;
+import by.itacademy.ivanchikov.finalproject.av.utils.Waiter;
 import net.bytebuddy.asm.Advice;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +16,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class AvPage {
+    private static final Logger logger = LogManager.getLogger();
     WebDriver driver;
     WebDriverWait wait = new WebDriverWait(MyDriver.getDriver(), Duration.ofSeconds(10));
 
@@ -67,29 +71,17 @@ public class AvPage {
     public void clickSendKeysCarMakeSearch() {
         driver.findElement(By.xpath(AvPageXpath.CAR_MAKE_SEARCH)).click();
         driver.findElement(By.xpath(AvPageXpath.CAR_MAKE_SEARCH)).sendKeys("Mazda" + Keys.ENTER);
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Waiter.wairFor(5);
     }
 
     public void clickModelSelectionButton() {
         driver.findElement(By.xpath(AvPageXpath.MODEL_SELECTION_BUTTON)).click();
-        try {
-            Thread.sleep(6000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+       Waiter.wairFor(5);
     }
 
     public void clickModelSelectionConfirmationButton() throws InterruptedException {
         driver.findElement(By.xpath(AvPageXpath.MODEL_SELECTION_CONFIRMATION_BUTTON)).click();
-        try {
-            Thread.sleep(6000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Waiter.wairFor(6);
     }
 
     public void clickShowResultButton() {

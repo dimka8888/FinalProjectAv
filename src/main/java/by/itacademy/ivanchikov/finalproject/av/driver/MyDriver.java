@@ -25,4 +25,11 @@ public class MyDriver {
         } else
             driver.quit();
     }
+    public void waitFor(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds*5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
