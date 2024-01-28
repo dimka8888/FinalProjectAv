@@ -9,9 +9,9 @@ import org.junit.jupiter.api.Test;
 
 public class AvTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger();
+
     @Test
-    public void testLoginCheck()  {
-        logger.info("App test log message.");
+    public void testLoginCheck() {
         AvPage avPage = new AvPage();
         avPage.openHomePage();
         avPage.clickLoginButtonMain();
@@ -24,7 +24,7 @@ public class AvTest extends BaseTest {
     }
 
     @Test
-    public void testLoginByPhoneNumber()  {
+    public void testLoginByPhoneNumber() {
         AvPage avPage = new AvPage();
         avPage.openHomePage();
         avPage.clickLoginButtonMain();

@@ -12,6 +12,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class LoginTest {
     private static final Logger logger = LogManager.getLogger();
+
     @Test
     public void checkLoginWithIncorrectPasswordAndLogin() {
         logger.info("App test log message.");
@@ -27,6 +28,7 @@ public class LoginTest {
                 statusCode(400).
                 body("messageText", equalTo("Неверный логин или пароль. Если забыли пароль, восстановите его"));
     }
+
     @Test
     public void checkLoginWithEmptyPasswordAndlogin() {
         Map<String, String> headers = new HashMap<>();
@@ -41,6 +43,7 @@ public class LoginTest {
                 statusCode(400).
                 body("messageText", equalTo("Запрос не соответствует правилам валидации"));
     }
+
     @Test
     public void checkLoginWithEmptyPassword() {
         Map<String, String> headers = new HashMap<>();
@@ -55,6 +58,7 @@ public class LoginTest {
                 statusCode(400).
                 body("messageText", equalTo("Запрос не соответствует правилам валидации"));
     }
+
     @Test
     public void checkLoginWithRemovedLoginField() {
         Map<String, String> headers = new HashMap<>();
@@ -66,6 +70,7 @@ public class LoginTest {
                 statusCode(400).
                 body("messageText", equalTo("Неверный запрос"));
     }
+
     @Test
     public void checkLoginWithRemovedLoginAndPasswordField() {
         Map<String, String> headers = new HashMap<>();

@@ -24,4 +24,4 @@ public class DriverSingleton {
         } else
             driver.quit();
     }
-  }
+}

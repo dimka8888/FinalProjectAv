@@ -83,7 +83,7 @@ public class AvPage {
     public void clickSendKeysCarMakeSearch() {
         logger.info("Click car make search:");
         driver.findElement(By.xpath(AvPageXpath.CAR_MAKE_SEARCH)).click();
-        logger.info("Send keys car make serch:"+Keys.ENTER);
+        logger.info("Send keys car make serch:" + Keys.ENTER);
         driver.findElement(By.xpath(AvPageXpath.CAR_MAKE_SEARCH)).sendKeys("Mazda" + Keys.ENTER);
         Waiter.wairFor(5);
     }
@@ -94,7 +94,7 @@ public class AvPage {
         Waiter.wairFor(5);
     }
 
-    public void clickModelSelectionConfirmationButton()  {
+    public void clickModelSelectionConfirmationButton() {
         driver.findElement(By.xpath(AvPageXpath.MODEL_SELECTION_CONFIRMATION_BUTTON)).click();
         Waiter.wairFor(6);
     }
