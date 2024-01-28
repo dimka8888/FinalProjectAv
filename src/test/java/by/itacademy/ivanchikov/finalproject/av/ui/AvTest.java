@@ -2,12 +2,16 @@ package by.itacademy.ivanchikov.finalproject.av.ui;
 
 
 import by.itacademy.ivanchikov.finalproject.av.page.AvPage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class AvTest extends BaseTest {
+    private static final Logger logger = LogManager.getLogger();
     @Test
-    public void testLoginCheck() throws InterruptedException {
+    public void testLoginCheck()  {
+        logger.info("App test log message.");
         AvPage avPage = new AvPage();
         avPage.openHomePage();
         avPage.clickLoginButtonMain();
@@ -20,7 +24,7 @@ public class AvTest extends BaseTest {
     }
 
     @Test
-    public void testLoginByPhoneNumber() throws InterruptedException {
+    public void testLoginByPhoneNumber()  {
         AvPage avPage = new AvPage();
         avPage.openHomePage();
         avPage.clickLoginButtonMain();
@@ -45,7 +49,7 @@ public class AvTest extends BaseTest {
     }
 
     @Test
-    public void testHeaderCheck() throws InterruptedException {
+    public void testHeaderCheck() {
         AvPage avPage = new AvPage();
         avPage.openHomePage();
         avPage.clickHeadingSpecialEquipment();

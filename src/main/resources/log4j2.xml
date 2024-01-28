@@ -7,7 +7,7 @@
         <Console name="STDOUT">
             <Layout type="PatternLayout" pattern="%m %n" />
         </Console>
-        <RollingFile name="rollingFile"
+        <RollingFile name="RollingFile"
             fileName="logs/log4j2.log${date:yyyy-MM:MM-dd-yyyy}"
             filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
             <PatternLayout>

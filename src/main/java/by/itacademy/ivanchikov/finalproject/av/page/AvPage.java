@@ -26,60 +26,75 @@ public class AvPage {
 
     public void openHomePage() {
         driver.get("https://av.by/");
+        logger.info("Home page av.by is opened");
     }
 
     public void clickLoginButtonMain() {
+        logger.info("Click login button main");
         driver.findElement(By.xpath(AvPageXpath.LOGIN_BUTTON_MAIN)).click();
     }
 
     public void clickLoginMailTab() {
+        logger.info("Click login main tab");
         driver.findElement(By.xpath(AvPageXpath.LOGIN_MAIL_TAB)).click();
     }
 
     public void sendKeysLoginInputField() {
+        logger.info("Send keys email");
         driver.findElement(By.xpath(AvPageXpath.LOGIN_INPUT_FIELD)).sendKeys(User.getRandomNoCorrectEmail());
     }
 
     public void sendKeysPasswordInputField() {
+        logger.info("Send keys password");
         driver.findElement(By.xpath(AvPageXpath.PASSWORD_INPUT_FIELD)).sendKeys(Random.getComplexRandomPassword());
     }
 
     public void clickLoginButtonСustom() {
+        logger.info("Click login button custom");
         driver.findElement(By.xpath(AvPageXpath.LOGIN_BUTTON_СUSTOM)).click();
     }
 
     public String getErrorMessange() {
+        logger.info("getErrorMessange method returns text:");
         return driver.findElement(By.xpath(AvPageXpath.ERROR_MESSANGE)).getText();
     }
 
     public void sendKeysPhoneLoginNumber() {
+        logger.info("Send keys phone number");
         driver.findElement(By.xpath(AvPageXpath.PHONE_LOGIN_NUMBER)).sendKeys(Random.getComplexRandomNumber());
     }
 
     public void sendKeysPhonePasswordNumber() {
+        logger.info("Send keys phone password");
         driver.findElement(By.xpath(AvPageXpath.PHONE_PASSWORD_NUMBER)).sendKeys(Random.getComplexRandomPassword());
     }
 
     public String getErrorMessangeNumber() {
+        logger.info("getErrorMessangeNumbe method returns text:");
+
         return driver.findElement(By.xpath(AvPageXpath.ERROR_MESSANGE_NUMBER)).getText();
     }
 
     public void clickSearchButtonBrand() {
+        logger.info("Click search button brand");
         driver.findElement(By.xpath(AvPageXpath.SEARCH_BUTTON_BRAND)).click();
     }
 
     public void clickSendKeysCarMakeSearch() {
+        logger.info("Click car make search:");
         driver.findElement(By.xpath(AvPageXpath.CAR_MAKE_SEARCH)).click();
+        logger.info("Send keys car make serch:"+Keys.ENTER);
         driver.findElement(By.xpath(AvPageXpath.CAR_MAKE_SEARCH)).sendKeys("Mazda" + Keys.ENTER);
         Waiter.wairFor(5);
     }
 
     public void clickModelSelectionButton() {
+        logger.info("Click model selection button");
         driver.findElement(By.xpath(AvPageXpath.MODEL_SELECTION_BUTTON)).click();
-       Waiter.wairFor(5);
+        Waiter.wairFor(5);
     }
 
-    public void clickModelSelectionConfirmationButton() throws InterruptedException {
+    public void clickModelSelectionConfirmationButton()  {
         driver.findElement(By.xpath(AvPageXpath.MODEL_SELECTION_CONFIRMATION_BUTTON)).click();
         Waiter.wairFor(6);
     }

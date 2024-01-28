@@ -1,5 +1,7 @@
 package by.itacademy.ivanchikov.finalproject.av.api;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -9,8 +11,10 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class LoginTest {
+    private static final Logger logger = LogManager.getLogger();
     @Test
     public void checkLoginWithIncorrectPasswordAndLogin() {
+        logger.info("App test log message.");
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
         String body = "{\n" +
