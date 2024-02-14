@@ -21,6 +21,7 @@ public class AvTest extends BaseTest {
         avPage.clickLoginButtonСustom();
         avPage.getErrorMessange();
         Assertions.assertEquals("Неверный логин или пароль. Если забыли пароль, восстановите его", avPage.getErrorMessange());
+        logger.info("Test passed \n");
     }
 
     @Test
@@ -33,6 +34,7 @@ public class AvTest extends BaseTest {
         avPage.clickLoginButtonСustom();
         avPage.getErrorMessangeNumber();
         Assertions.assertEquals("Неверный телефон или пароль. Если забыли пароль, восстановите его", avPage.getErrorMessangeNumber());
+        logger.info("Test passed \n");
     }
 
     @Test
@@ -46,6 +48,7 @@ public class AvTest extends BaseTest {
         avPage.clickModelSelectionConfirmationButton();
         avPage.getResultTitle();
         Assertions.assertEquals("Продажа автомобилей Mazda 6", avPage.getResultTitle());
+        logger.info("Test passed \n");
     }
 
     @Test
@@ -55,5 +58,6 @@ public class AvTest extends BaseTest {
         avPage.clickHeadingSpecialEquipment();
         avPage.getMessangeHeadingSpecialEquipment();
         Assertions.assertEquals("Продажа спецтехники в Беларуси", avPage.getMessangeHeadingSpecialEquipment());
+        logger.info("Test passed \n");
     }
 }
