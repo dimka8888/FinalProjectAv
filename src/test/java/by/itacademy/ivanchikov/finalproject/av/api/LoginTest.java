@@ -27,6 +27,7 @@ public class LoginTest {
                 then().
                 statusCode(400).
                 body("messageText", equalTo("Неверный логин или пароль. Если забыли пароль, восстановите его"));
+        logger.info("Test passed \n");
     }
 
     @Test
@@ -42,6 +43,7 @@ public class LoginTest {
                 then().
                 statusCode(400).
                 body("messageText", equalTo("Запрос не соответствует правилам валидации"));
+        logger.info("Test passed \n");
     }
 
     @Test
@@ -57,6 +59,7 @@ public class LoginTest {
                 then().
                 statusCode(400).
                 body("messageText", equalTo("Запрос не соответствует правилам валидации"));
+        logger.info("Test passed \n");
     }
 
     @Test
@@ -69,6 +72,7 @@ public class LoginTest {
                 then().
                 statusCode(400).
                 body("messageText", equalTo("Неверный запрос"));
+        logger.info("Test passed \n");
     }
 
     @Test
@@ -81,5 +85,6 @@ public class LoginTest {
                 then().
                 statusCode(400).
                 body("messageText", equalTo("Запрос не соответствует правилам валидации"));
+        logger.info("Test passed \n");
     }
 }
